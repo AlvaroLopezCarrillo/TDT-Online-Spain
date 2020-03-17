@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		380FB30623CE43F5009C5433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB30523CE43F5009C5433 /* AppDelegate.swift */; };
+		380FB30B23CE43F5009C5433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380FB30923CE43F5009C5433 /* Main.storyboard */; };
+		380FB30D23CE43F7009C5433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380FB30C23CE43F7009C5433 /* Assets.xcassets */; };
+		380FB31023CE43F7009C5433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380FB30E23CE43F7009C5433 /* LaunchScreen.storyboard */; };
+		380FB31C23CE44C6009C5433 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 380FB31B23CE44C6009C5433 /* Kingfisher */; };
+		380FB31F23CE44F2009C5433 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 380FB31E23CE44F2009C5433 /* SwiftyJSON */; };
+		380FB32623CE46DF009C5433 /* ApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32523CE46DF009C5433 /* ApiCalls.swift */; };
+		380FB32823CE4977009C5433 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32723CE4977009C5433 /* Channel.swift */; };
+		380FB32A23CE5448009C5433 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32923CE5448009C5433 /* MainViewController.swift */; };
+		380FB32C23CE5A81009C5433 /* ChannelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */; };
+		384C62A524215A62001A533F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 384C62A424215A62001A533F /* Alamofire */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		380FB30223CE43F5009C5433 /* TDT Online España.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TDT Online España.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		380FB30523CE43F5009C5433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		380FB30A23CE43F5009C5433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		380FB30C23CE43F7009C5433 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		380FB30F23CE43F7009C5433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		380FB31123CE43F7009C5433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380FB32523CE46DF009C5433 /* ApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCalls.swift; sourceTree = "<group>"; };
+		380FB32723CE4977009C5433 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		380FB32923CE5448009C5433 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		380FB2FF23CE43F5009C5433 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384C62A524215A62001A533F /* Alamofire in Frameworks */,
+				380FB31F23CE44F2009C5433 /* SwiftyJSON in Frameworks */,
+				380FB31C23CE44C6009C5433 /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		380FB2F923CE43F5009C5433 = {
+			isa = PBXGroup;
+			children = (
+				380FB30423CE43F5009C5433 /* TDT Online España */,
+				380FB30323CE43F5009C5433 /* Products */,
+				384C62A324215A62001A533F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		380FB30323CE43F5009C5433 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				380FB30223CE43F5009C5433 /* TDT Online España.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		380FB30423CE43F5009C5433 /* TDT Online España */ = {
+			isa = PBXGroup;
+			children = (
+				380FB32323CE460E009C5433 /* Models */,
+				380FB32223CE460A009C5433 /* Cells */,
+				380FB32423CE4620009C5433 /* Storyboards */,
+				380FB32123CE4605009C5433 /* Utils */,
+				380FB32023CE45F6009C5433 /* UI */,
+				380FB30523CE43F5009C5433 /* AppDelegate.swift */,
+				380FB30C23CE43F7009C5433 /* Assets.xcassets */,
+				380FB30E23CE43F7009C5433 /* LaunchScreen.storyboard */,
+				380FB31123CE43F7009C5433 /* Info.plist */,
+			);
+			path = "TDT Online España";
+			sourceTree = "<group>";
+		};
+		380FB32023CE45F6009C5433 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				380FB32923CE5448009C5433 /* MainViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		380FB32123CE4605009C5433 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				380FB32523CE46DF009C5433 /* ApiCalls.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		380FB32223CE460A009C5433 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		380FB32323CE460E009C5433 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				380FB32723CE4977009C5433 /* Channel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		380FB32423CE4620009C5433 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				380FB30923CE43F5009C5433 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		384C62A324215A62001A533F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		380FB30123CE43F5009C5433 /* TDT Online España */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 380FB31423CE43F7009C5433 /* Build configuration list for PBXNativeTarget "TDT Online España" */;
+			buildPhases = (
+				380FB2FE23CE43F5009C5433 /* Sources */,
+				380FB2FF23CE43F5009C5433 /* Frameworks */,
+				380FB30023CE43F5009C5433 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TDT Online España";
+			packageProductDependencies = (
+				380FB31B23CE44C6009C5433 /* Kingfisher */,
+				380FB31E23CE44F2009C5433 /* SwiftyJSON */,
+				384C62A424215A62001A533F /* Alamofire */,
+			);
+			productName = "TDT Online España";
+			productReference = 380FB30223CE43F5009C5433 /* TDT Online España.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		380FB2FA23CE43F5009C5433 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Iberian Apps";
+				TargetAttributes = {
+					380FB30123CE43F5009C5433 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 380FB2FD23CE43F5009C5433 /* Build configuration list for PBXProject "TDT Online España" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 380FB2F923CE43F5009C5433;
+			packageReferences = (
+				380FB31723CE4451009C5433 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				380FB31A23CE44C6009C5433 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				380FB31D23CE44F2009C5433 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = 380FB30323CE43F5009C5433 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				380FB30123CE43F5009C5433 /* TDT Online España */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		380FB30023CE43F5009C5433 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380FB31023CE43F7009C5433 /* LaunchScreen.storyboard in Resources */,
+				380FB30D23CE43F7009C5433 /* Assets.xcassets in Resources */,
+				380FB30B23CE43F5009C5433 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		380FB2FE23CE43F5009C5433 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				380FB32623CE46DF009C5433 /* ApiCalls.swift in Sources */,
+				380FB32C23CE5A81009C5433 /* ChannelsTableViewCell.swift in Sources */,
+				380FB32823CE4977009C5433 /* Channel.swift in Sources */,
+				380FB30623CE43F5009C5433 /* AppDelegate.swift in Sources */,
+				380FB32A23CE5448009C5433 /* MainViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		380FB30923CE43F5009C5433 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				380FB30A23CE43F5009C5433 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		380FB30E23CE43F7009C5433 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				380FB30F23CE43F7009C5433 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		380FB31223CE43F7009C5433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Debug;
+		};
+		380FB31323CE43F7009C5433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		380FB31523CE43F7009C5433 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJSDWNVAY3;
+				INFOPLIST_FILE = "TDT Online España/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iberianapps.TDT-Online-Espan-a";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		380FB31623CE43F7009C5433 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HJSDWNVAY3;
+				INFOPLIST_FILE = "TDT Online España/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.iberianapps.TDT-Online-Espan-a";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		380FB2FD23CE43F5009C5433 /* Build configuration list for PBXProject "TDT Online España" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380FB31223CE43F7009C5433 /* Debug */,
+				380FB31323CE43F7009C5433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		380FB31423CE43F7009C5433 /* Build configuration list for PBXNativeTarget "TDT Online España" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				380FB31523CE43F7009C5433 /* Debug */,
+				380FB31623CE43F7009C5433 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		380FB31723CE4451009C5433 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		380FB31A23CE44C6009C5433 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		380FB31D23CE44F2009C5433 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		380FB31B23CE44C6009C5433 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 380FB31A23CE44C6009C5433 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		380FB31E23CE44F2009C5433 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 380FB31D23CE44F2009C5433 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		384C62A424215A62001A533F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 380FB31723CE4451009C5433 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 380FB2FA23CE43F5009C5433 /* Project object */;
+}

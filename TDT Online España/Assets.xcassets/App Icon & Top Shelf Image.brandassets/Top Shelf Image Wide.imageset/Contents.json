@@ -1,0 +1,28 @@
+{
+  "images" : [
+    {
+      "idiom" : "tv",
+      "filename" : "2320x720 – 3.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "filename" : "2320x720 – 3@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "tv-marketing",
+      "filename" : "2320x720 – 3-1.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "tv-marketing",
+      "filename" : "2320x720 – 3@2x-1.png",
+      "scale" : "2x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

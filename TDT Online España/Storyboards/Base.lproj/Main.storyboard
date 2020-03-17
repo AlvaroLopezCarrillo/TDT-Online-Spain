@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TDT_Online_Espan_a" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="IpY-mv-eRI">
+                                <rect key="frame" x="90" y="68" width="1740" height="944"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelsTableViewCell" id="5Go-Ql-Sil" customClass="ChannelsTableViewCell" customModule="TDT_Online_Espan_a" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="1740" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Go-Ql-Sil" id="avR-WK-UgQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="1740" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LoM-DV-5WL">
+                                                    <rect key="frame" x="8" y="5" width="120" height="120"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="120" id="9Yw-6B-pQl"/>
+                                                        <constraint firstAttribute="width" constant="120" id="acr-YI-2EL"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="Ddk-25-7fu">
+                                                    <rect key="frame" x="168" y="42" width="1532" height="46"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ddk-25-7fu" firstAttribute="centerY" secondItem="avR-WK-UgQ" secondAttribute="centerY" id="GDg-ml-dAg"/>
+                                                <constraint firstItem="LoM-DV-5WL" firstAttribute="centerY" secondItem="avR-WK-UgQ" secondAttribute="centerY" id="ON0-1f-Xam"/>
+                                                <constraint firstItem="Ddk-25-7fu" firstAttribute="leading" secondItem="LoM-DV-5WL" secondAttribute="trailing" constant="40" id="ZAi-Y8-MSj"/>
+                                                <constraint firstItem="LoM-DV-5WL" firstAttribute="leading" secondItem="avR-WK-UgQ" secondAttribute="leading" constant="8" id="pMy-IP-Y0k"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ddk-25-7fu" secondAttribute="trailing" constant="20" id="qPF-eV-EBy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="logo" destination="LoM-DV-5WL" id="XMX-GX-a2Z"/>
+                                            <outlet property="name" destination="Ddk-25-7fu" id="VwP-61-hCY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="efY-9r-Vwl"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="aaL-6R-XBN"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E2E-ki-QCs">
+                                <rect key="frame" x="0.0" y="980" width="1920" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desarrollado por: Álvaro López Carrillo | Agradecimientos: TDTChannels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2c-zE-1PA">
+                                        <rect key="frame" x="542" y="34.5" width="836" height="31"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="PLO-Sz-5Rl"/>
+                                    <constraint firstItem="k2c-zE-1PA" firstAttribute="centerY" secondItem="E2E-ki-QCs" secondAttribute="centerY" id="dy7-7a-u9t"/>
+                                    <constraint firstItem="k2c-zE-1PA" firstAttribute="centerX" secondItem="E2E-ki-QCs" secondAttribute="centerX" id="eCc-iu-Okq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="E2E-ki-QCs" secondAttribute="bottom" id="30R-m9-h1F"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="IpY-mv-eRI" secondAttribute="trailing" id="4V3-cV-AeA"/>
+                            <constraint firstItem="E2E-ki-QCs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DwD-8Y-DxB"/>
+                            <constraint firstItem="IpY-mv-eRI" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="LsX-7F-ki3"/>
+                            <constraint firstItem="IpY-mv-eRI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="V5n-xV-fEk"/>
+                            <constraint firstAttribute="trailing" secondItem="E2E-ki-QCs" secondAttribute="trailing" id="l8Q-ic-cIB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IpY-mv-eRI" secondAttribute="bottom" constant="8" symbolic="YES" id="v77-us-PjY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableViewChannels" destination="IpY-mv-eRI" id="BC5-2g-HL4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="69"/>
+        </scene>
+    </scenes>
+</document>
