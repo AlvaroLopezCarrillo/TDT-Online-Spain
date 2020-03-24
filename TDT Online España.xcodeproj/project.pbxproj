@@ -357,6 +357,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HJSDWNVAY3;
 				INFOPLIST_FILE = "TDT Online España/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,6 +376,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = HJSDWNVAY3;
 				INFOPLIST_FILE = "TDT Online España/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
