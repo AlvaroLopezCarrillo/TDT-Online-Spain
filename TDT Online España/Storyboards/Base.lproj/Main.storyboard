@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="appleTV" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -10,7 +10,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="TDT_Online_Espan_a" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="MainViewController" customModule="TDT_Online_Espan_a" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,11 +20,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="IpY-mv-eRI">
-                                <rect key="frame" x="90" y="68" width="1740" height="944"/>
+                                <rect key="frame" x="0.0" y="68" width="1920" height="912"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelsTableViewCell" id="5Go-Ql-Sil" customClass="ChannelsTableViewCell" customModule="TDT_Online_Espan_a" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="1740" height="130"/>
+                                        <rect key="frame" x="90" y="1" width="1740" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5Go-Ql-Sil" id="avR-WK-UgQ">
                                             <rect key="frame" x="0.0" y="0.0" width="1740" height="130"/>
@@ -80,26 +80,101 @@
                                     <constraint firstItem="k2c-zE-1PA" firstAttribute="centerX" secondItem="E2E-ki-QCs" secondAttribute="centerX" id="eCc-iu-Okq"/>
                                 </constraints>
                             </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0d5-ch-W7s">
+                                <rect key="frame" x="693.5" y="509" width="533" height="62"/>
+                                <string key="text">No hay canales.
+Cierre completamente la app y vuelva a intentarlo.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="E2E-ki-QCs" secondAttribute="bottom" id="30R-m9-h1F"/>
-                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="IpY-mv-eRI" secondAttribute="trailing" id="4V3-cV-AeA"/>
+                            <constraint firstAttribute="trailing" secondItem="IpY-mv-eRI" secondAttribute="trailing" id="4V3-cV-AeA"/>
+                            <constraint firstItem="0d5-ch-W7s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8CI-Mb-vJb"/>
                             <constraint firstItem="E2E-ki-QCs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DwD-8Y-DxB"/>
-                            <constraint firstItem="IpY-mv-eRI" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="LsX-7F-ki3"/>
+                            <constraint firstItem="IpY-mv-eRI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LsX-7F-ki3"/>
                             <constraint firstItem="IpY-mv-eRI" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="V5n-xV-fEk"/>
                             <constraint firstAttribute="trailing" secondItem="E2E-ki-QCs" secondAttribute="trailing" id="l8Q-ic-cIB"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IpY-mv-eRI" secondAttribute="bottom" constant="8" symbolic="YES" id="v77-us-PjY"/>
+                            <constraint firstItem="0d5-ch-W7s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wHS-Mu-61I"/>
+                            <constraint firstItem="E2E-ki-QCs" firstAttribute="top" secondItem="IpY-mv-eRI" secondAttribute="bottom" id="xjP-2c-goc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1Pr-Ur-klb"/>
                     <connections>
+                        <outlet property="lblEmptyList" destination="0d5-ch-W7s" id="TKJ-bb-WMj"/>
                         <outlet property="tableViewChannels" destination="IpY-mv-eRI" id="BC5-2g-HL4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="69" y="69"/>
+            <point key="canvasLocation" x="2154" y="156"/>
+        </scene>
+        <!--Terms View Controller-->
+        <scene sceneID="Yyh-TS-YmW">
+            <objects>
+                <viewController storyboardIdentifier="TermsViewController" id="OAr-0O-e0m" customClass="TermsViewController" customModule="TDT_Online_Espan_a" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MES-ho-yHX"/>
+                        <viewControllerLayoutGuide type="bottom" id="TCK-Sq-QrN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2mC-Kh-BsH">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-NR-Yq8">
+                                <rect key="frame" x="110" y="110" width="1700" height="658"/>
+                                <mutableString key="text">::: AVISO LEGAL / INFORMACION SOBRE LA APP :::
+
+Esta aplicación obtiene todo su contenido de canales de televisión en abierto y libre, realizado por los propietarios de los mismos. El contenido reproducido y mostrado por esta aplicación proviene de servidores de terceros y en ningún caso se almacena en nuestros servidores, limitandonos simplemente a ofrecer en esta aplicación dicho contenido de terceros. No alojamos ningun tipo de contenido con derechos de autor. Las Marcas, Marcas Registradas, Logotipos e Imagenes mostradas son propiedad de sus respectivos dueños.
+
+Las emisiones son oficiales y conectan directamente con el proveedor oficial del servicio. No se almacena ningún contenido, tan solo utilizamos los enlaces que proporciona el mismo distribuidor de la emisión de forma oficial. Si posees los derechos de algún canal y deseas que lo retire contactar con info@iberianapps.com y será retirado.
+
+
+----------------
+
+::: DISCLAIMER / INFORMATION ABOUT THE APP :::
+
+This application gets all its content from free and open television channels, made by their owners. The content reproduced and displayed by this application comes from third-party servers and in no case is stored on our servers, simply limiting ourselves to offering this third-party content in this application. We do not host any type of copyrighted content. The Trademarks, Registered Trademarks, Logos and Images shown are the property of their respective owners.
+
+The emissions are official and connect directly with the official service provider. No content is stored, we only use the links provided by the same distributor of the broadcast officially. If you have the rights to any channel and wish to have it removed, contact info@iberianapps.com and it will be withdrawn.</mutableString>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-KX-YyO">
+                                <rect key="frame" x="590" y="912" width="740" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="eua-Vg-ARb"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Aceptar | Accept"/>
+                                <connections>
+                                    <action selector="onClickEnter:" destination="OAr-0O-e0m" eventType="primaryActionTriggered" id="62c-hC-OVw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NRa-NR-Yq8" firstAttribute="centerX" secondItem="2mC-Kh-BsH" secondAttribute="centerX" id="1SP-2b-45X"/>
+                            <constraint firstItem="NRa-NR-Yq8" firstAttribute="leading" secondItem="psY-Rw-XlY" secondAttribute="leading" constant="20" id="5Ma-8P-myN"/>
+                            <constraint firstItem="NRa-NR-Yq8" firstAttribute="top" secondItem="MES-ho-yHX" secondAttribute="bottom" constant="50" id="Sco-M4-PqE"/>
+                            <constraint firstItem="TCK-Sq-QrN" firstAttribute="top" secondItem="CO7-KX-YyO" secondAttribute="bottom" constant="8" id="shf-0g-ytA"/>
+                            <constraint firstItem="CO7-KX-YyO" firstAttribute="leading" secondItem="psY-Rw-XlY" secondAttribute="leading" constant="500" id="xmP-Ar-Seg"/>
+                            <constraint firstItem="CO7-KX-YyO" firstAttribute="centerX" secondItem="2mC-Kh-BsH" secondAttribute="centerX" id="y9S-9L-tug"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="psY-Rw-XlY"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnEnter" destination="CO7-KX-YyO" id="Phw-eX-5lx"/>
+                        <outlet property="lblTerms" destination="NRa-NR-Yq8" id="dFc-6Z-FVE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VmC-i7-txT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4326" y="156"/>
         </scene>
     </scenes>
 </document>

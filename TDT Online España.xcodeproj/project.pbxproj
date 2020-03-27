@@ -17,6 +17,7 @@
 		380FB32823CE4977009C5433 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32723CE4977009C5433 /* Channel.swift */; };
 		380FB32A23CE5448009C5433 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32923CE5448009C5433 /* MainViewController.swift */; };
 		380FB32C23CE5A81009C5433 /* ChannelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */; };
+		3840D6B1242E214F00BB48B4 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840D6B0242E214F00BB48B4 /* TermsViewController.swift */; };
 		384C62A524215A62001A533F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 384C62A424215A62001A533F /* Alamofire */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		380FB32723CE4977009C5433 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		380FB32923CE5448009C5433 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewCell.swift; sourceTree = "<group>"; };
+		3840D6B0242E214F00BB48B4 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				380FB32923CE5448009C5433 /* MainViewController.swift */,
+				3840D6B0242E214F00BB48B4 /* TermsViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				380FB32C23CE5A81009C5433 /* ChannelsTableViewCell.swift in Sources */,
 				380FB32823CE4977009C5433 /* Channel.swift in Sources */,
 				380FB30623CE43F5009C5433 /* AppDelegate.swift in Sources */,
+				3840D6B1242E214F00BB48B4 /* TermsViewController.swift in Sources */,
 				380FB32A23CE5448009C5433 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,7 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = HJSDWNVAY3;
 				INFOPLIST_FILE = "TDT Online España/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -376,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 3;
 				DEVELOPMENT_TEAM = HJSDWNVAY3;
 				INFOPLIST_FILE = "TDT Online España/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

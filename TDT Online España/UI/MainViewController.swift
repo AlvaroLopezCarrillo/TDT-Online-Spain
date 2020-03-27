@@ -13,12 +13,23 @@ import AVKit
 class MainViewController: UIViewController {
     
     @IBOutlet weak var tableViewChannels: UITableView!
+    @IBOutlet weak var lblEmptyList: UILabel!
     
     var allChannels = [Channel]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         downloadChannels()
+        if !UserDefaults.standard.bool(forKey: "TERMS_ACCEPTED") {
+            showTerms()
+        }
+    }
+    
+    func showTerms(){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+           let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "TermsViewController") as! TermsViewController
+           self.present(vc, animated: true, completion: nil)
+        }
     }
     
 
@@ -28,8 +39,11 @@ class MainViewController: UIViewController {
                 switch statusCode! {
                 case 200:
                     self.allChannels = channels
+                    self.lblEmptyList.isHidden = !channels.isEmpty
                     self.tableViewChannels.reloadData()
                 default:
+                    self.lblEmptyList.text = "Error al conectar con la fuente de datos"
+                    self.lblEmptyList.isHidden = false
                     break //Error
                 }
             }
