@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="appleTV" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,7 +21,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="IpY-mv-eRI">
                                 <rect key="frame" x="0.0" y="68" width="1920" height="912"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChannelsTableViewCell" id="5Go-Ql-Sil" customClass="ChannelsTableViewCell" customModule="TDT_Online_Espan_a" customModuleProvider="target">
                                         <rect key="frame" x="90" y="1" width="1740" height="130"/>
@@ -40,10 +40,11 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="Ddk-25-7fu">
                                                     <rect key="frame" x="168" y="42" width="1532" height="46"/>
                                                     <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
                                                 <constraint firstItem="Ddk-25-7fu" firstAttribute="centerY" secondItem="avR-WK-UgQ" secondAttribute="centerY" id="GDg-ml-dAg"/>
                                                 <constraint firstItem="LoM-DV-5WL" firstAttribute="centerY" secondItem="avR-WK-UgQ" secondAttribute="centerY" id="ON0-1f-Xam"/>
@@ -52,6 +53,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="Ddk-25-7fu" secondAttribute="trailing" constant="20" id="qPF-eV-EBy"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="logo" destination="LoM-DV-5WL" id="XMX-GX-a2Z"/>
                                             <outlet property="name" destination="Ddk-25-7fu" id="VwP-61-hCY"/>
@@ -89,7 +91,7 @@ Cierre completamente la app y vuelva a intentarlo.</string>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="E2E-ki-QCs" secondAttribute="bottom" id="30R-m9-h1F"/>
                             <constraint firstAttribute="trailing" secondItem="IpY-mv-eRI" secondAttribute="trailing" id="4V3-cV-AeA"/>
@@ -127,7 +129,7 @@ Cierre completamente la app y vuelva a intentarlo.</string>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRa-NR-Yq8">
                                 <rect key="frame" x="110" y="110" width="1700" height="658"/>
-                                <mutableString key="text">::: AVISO LEGAL / INFORMACION SOBRE LA APP :::
+                                <string key="text">::: AVISO LEGAL / INFORMACION SOBRE LA APP :::
 
 Esta aplicación obtiene todo su contenido de canales de televisión en abierto y libre, realizado por los propietarios de los mismos. El contenido reproducido y mostrado por esta aplicación proviene de servidores de terceros y en ningún caso se almacena en nuestros servidores, limitandonos simplemente a ofrecer en esta aplicación dicho contenido de terceros. No alojamos ningun tipo de contenido con derechos de autor. Las Marcas, Marcas Registradas, Logotipos e Imagenes mostradas son propiedad de sus respectivos dueños.
 
@@ -140,9 +142,9 @@ Las emisiones son oficiales y conectan directamente con el proveedor oficial del
 
 This application gets all its content from free and open television channels, made by their owners. The content reproduced and displayed by this application comes from third-party servers and in no case is stored on our servers, simply limiting ourselves to offering this third-party content in this application. We do not host any type of copyrighted content. The Trademarks, Registered Trademarks, Logos and Images shown are the property of their respective owners.
 
-The emissions are official and connect directly with the official service provider. No content is stored, we only use the links provided by the same distributor of the broadcast officially. If you have the rights to any channel and wish to have it removed, contact info@iberianapps.com and it will be withdrawn.</mutableString>
+The emissions are official and connect directly with the official service provider. No content is stored, we only use the links provided by the same distributor of the broadcast officially. If you have the rights to any channel and wish to have it removed, contact info@iberianapps.com and it will be withdrawn.</string>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-KX-YyO">
@@ -157,6 +159,7 @@ The emissions are official and connect directly with the official service provid
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="NRa-NR-Yq8" firstAttribute="centerX" secondItem="2mC-Kh-BsH" secondAttribute="centerX" id="1SP-2b-45X"/>
                             <constraint firstItem="NRa-NR-Yq8" firstAttribute="leading" secondItem="psY-Rw-XlY" secondAttribute="leading" constant="20" id="5Ma-8P-myN"/>
