@@ -24,4 +24,4 @@ Guia de instalación
 
 Video de instalación
 ---------
-[![Visita el video](https://img.youtube.com/vi/_llFZsdRXrA/maxresdefault.jpg)](https://youtu.be/_llFZsdRXrA)
+[![Visita el video](https://imgur.com/EuS6B6a.png)](https://youtu.be/_llFZsdRXrA)
