@@ -25,3 +25,8 @@ Guia de instalación
 Video de instalación
 ---------
 [![Visita el video](https://imgur.com/EuS6B6a.png)](https://youtu.be/_llFZsdRXrA)
+
+Otros
+---------
+
+Enlace del .ipa (no utilizar si no sabes que significa): [Aquí](https://iberianapps.com/proyectos/lopez/TDT%20Online%20Espan%CC%83a.ipa)
