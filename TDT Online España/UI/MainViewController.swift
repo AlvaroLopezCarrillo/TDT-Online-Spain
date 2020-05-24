@@ -11,8 +11,7 @@ import Kingfisher
 import AVKit
 
 class MainViewController: UIViewController {
-    
-    @IBOutlet weak var tableViewChannels: UITableView!
+    @IBOutlet weak var collectionViewChannels: UICollectionView!
     @IBOutlet weak var lblEmptyList: UILabel!
     
     var allChannels = [Channel]()
@@ -40,11 +39,10 @@ class MainViewController: UIViewController {
                 case 200:
                     self.allChannels = channels
                     self.lblEmptyList.isHidden = !channels.isEmpty
-                    self.tableViewChannels.reloadData()
+                    self.collectionViewChannels.reloadData()
                 default:
                     self.lblEmptyList.text = "Error al conectar con la fuente de datos"
                     self.lblEmptyList.isHidden = false
-                    break //Error
                 }
             }
         }
@@ -68,25 +66,22 @@ class MainViewController: UIViewController {
 
 }
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource{
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allChannels.count
+extension MainViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        allChannels.count
     }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableViewChannels.dequeueReusableCell(withIdentifier: "ChannelsTableViewCell") as! ChannelsTableViewCell
-        
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ChannelsCollectionViewCell", for: indexPath) as! ChannelCollectionViewCell
+
         cell.logo.kf.setImage(with: URL(string: allChannels[indexPath.row].logo!))
         cell.name.text = allChannels[indexPath.row].name!
-    
+
         return cell
     }
-    
-    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         //Press on item
         playVideo(source: allChannels[indexPath.row].url!)
     }
-    
-
 }

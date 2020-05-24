@@ -31,12 +31,14 @@ class ApiCalls{
                         for ambit in ambits!{
                             
                             let channels = ambit["channels"].array //Channels inside categories
-                            for channel in channels!{
+                            for channel in channels! {
                                 let urlChannel = channel["options"].array!.isEmpty ? "" : channel["options"].array![0]["url"].stringValue
-                                if(urlChannel != ""){
-                                    //Only channels with url
-                                    allChannels.append(Channel(name: channel["name"].stringValue, logo: channel["logo"].stringValue, url: urlChannel))
+                                // Only channels with url and M3U8 format
+                                guard channel["options"][0]["format"] == "m3u8", urlChannel != "" else {
+                                    continue
                                 }
+                                //Only channels with url
+                                allChannels.append(Channel(name: channel["name"].stringValue, logo: channel["logo"].stringValue, url: urlChannel))
                             }
                             
                         }
