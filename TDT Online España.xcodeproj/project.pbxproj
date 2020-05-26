@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250297E9247ABF76005961B8 /* ChannelsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250297E8247ABF76005961B8 /* ChannelsCollectionViewCell.swift */; };
 		380FB30623CE43F5009C5433 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB30523CE43F5009C5433 /* AppDelegate.swift */; };
 		380FB30B23CE43F5009C5433 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 380FB30923CE43F5009C5433 /* Main.storyboard */; };
 		380FB30D23CE43F7009C5433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380FB30C23CE43F7009C5433 /* Assets.xcassets */; };
@@ -16,12 +17,12 @@
 		380FB32623CE46DF009C5433 /* ApiCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32523CE46DF009C5433 /* ApiCalls.swift */; };
 		380FB32823CE4977009C5433 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32723CE4977009C5433 /* Channel.swift */; };
 		380FB32A23CE5448009C5433 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32923CE5448009C5433 /* MainViewController.swift */; };
-		380FB32C23CE5A81009C5433 /* ChannelsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */; };
 		3840D6B1242E214F00BB48B4 /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3840D6B0242E214F00BB48B4 /* TermsViewController.swift */; };
 		384C62A524215A62001A533F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 384C62A424215A62001A533F /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250297E8247ABF76005961B8 /* ChannelsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsCollectionViewCell.swift; sourceTree = "<group>"; };
 		380FB30223CE43F5009C5433 /* TDT Online España.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TDT Online España.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		380FB30523CE43F5009C5433 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		380FB30A23CE43F5009C5433 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -31,7 +32,6 @@
 		380FB32523CE46DF009C5433 /* ApiCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCalls.swift; sourceTree = "<group>"; };
 		380FB32723CE4977009C5433 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		380FB32923CE5448009C5433 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelsTableViewCell.swift; sourceTree = "<group>"; };
 		3840D6B0242E214F00BB48B4 /* TermsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,7 +102,7 @@
 		380FB32223CE460A009C5433 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				380FB32B23CE5A81009C5433 /* ChannelsTableViewCell.swift */,
+				250297E8247ABF76005961B8 /* ChannelsCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -212,9 +212,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				380FB32623CE46DF009C5433 /* ApiCalls.swift in Sources */,
-				380FB32C23CE5A81009C5433 /* ChannelsTableViewCell.swift in Sources */,
 				380FB32823CE4977009C5433 /* Channel.swift in Sources */,
 				380FB30623CE43F5009C5433 /* AppDelegate.swift in Sources */,
+				250297E9247ABF76005961B8 /* ChannelsCollectionViewCell.swift in Sources */,
 				3840D6B1242E214F00BB48B4 /* TermsViewController.swift in Sources */,
 				380FB32A23CE5448009C5433 /* MainViewController.swift in Sources */,
 			);
@@ -372,6 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Debug;
 		};
@@ -391,6 +392,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 			};
 			name = Release;
 		};
