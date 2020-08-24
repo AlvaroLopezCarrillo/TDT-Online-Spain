@@ -12,7 +12,8 @@ import SwiftyJSON
 
 class ApiCalls{
     
-    static let URL_DATA = "http://www.tdtchannels.com/lists/channels.json"
+    static let URL_DATA = "https://www.tdtchannels.com/lists/tv.json"
+    
     
     
     static func loadChannels(completionHandler:@escaping (_ result: [Channel], _ errorCode: Int?) -> Void){
@@ -32,13 +33,15 @@ class ApiCalls{
                             
                             let channels = ambit["channels"].array //Channels inside categories
                             for channel in channels! {
-                                let urlChannel = channel["options"].array!.isEmpty ? "" : channel["options"].array![0]["url"].stringValue
-                                // Only channels with url and M3U8 format
-                                guard channel["options"][0]["format"] == "m3u8", urlChannel != "" else {
-                                    continue
+                                
+                                let options = channel["options"].array
+                                for option in options! {
+                                    if(option["format"].stringValue == "m3u8"){
+                                        //Only channels with url m3u8
+                                        allChannels.append(Channel(name: channel["name"].stringValue, logo: channel["logo"].stringValue, url: option["url"].stringValue))
+                                        break
+                                    }
                                 }
-                                //Only channels with url
-                                allChannels.append(Channel(name: channel["name"].stringValue, logo: channel["logo"].stringValue, url: urlChannel))
                             }
                             
                         }
