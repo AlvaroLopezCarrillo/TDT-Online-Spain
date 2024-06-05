@@ -52,6 +52,7 @@ class ApiCalls{
                 completionHandler(allChannels,response.response?.statusCode)
             case .failure:
                 completionHandler(allChannels,response.response?.statusCode)
+                
             }
     
         }
